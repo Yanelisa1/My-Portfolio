@@ -33,6 +33,22 @@ Dir attribute indicates the direction in which the text flows
 Aria is a powerful tool that greatly enhances web accessibility,It is particulary valuable for ensuring that everone can use the full functionality of a complex interface in an ap.
 HTML have three important characters <,> and &
 
+WEEK1
+UNIT4: HTML NAVIGATION AND LINKING
+HTML LINKS
+
+When creating a link we use an A element which stands for Anchor.
+We add an href attribute with a URL enclosed in quotes
+URL can be either Relative or Absolute
+HTTP(Hypertext Transport Protocol) must be included in an absolute URL,It defines the rules for communication on the web and is crucial for linking.
+Relative URLs are based on the current files's location, while absolute URLs starts from the root of the website
+
+WEEK2 
+UNIT5: HTML WORKING WITH GRAPHICS AND IMAGES
+IMAGES
+
+
+
 
 
 
