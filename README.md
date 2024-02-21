@@ -68,7 +68,21 @@ Working with media in HTML involves integrating various types of multimedia cont
 Working with Audio: Insert audio files with the <audio> tag. Specify audio sources (src attribute) and optional attributes like controls for playback control.
 Working with Video: Embed videos using the <video> tag. Provide video sources (src attribute) and optional attributes like controls for playback control.
 Working with Captions and Subtitles: Include captions for accessibility using <track> element. Provide alternative text or transcripts for audio content.
-Embedding Media via Iframes: Embed external content using <iframe> tag.Specify the source URL with the src attribute.
+Embedding Media via Iframes: Embed external content using <iframe> tag.Specify the source URL with the src attribute. 
+
+WEEK2
+UNIT7: HTML CONTENT IDENTIFICATION
+
+Involves uniquely identifying elements in HTML,done using id attribute for individual identification and class attribute for grouping.
+HTML supports multiple languages through the lang attribute,helps in indicating the language used in the content for accessibility and search engine optimization.
+Generic elements like <div> and <span> are used for structuring content.
+They have no inherent meaning and are styled or scripted as needed.         
+<div>: Used for creating divisions or sections in a document.
+<span>: Used for applying styles to inline elements or grouping inline elements for scripting purposes.
+
+WEEK2
+UNIT8: HTML INTERGRATION
+
 
 
 
