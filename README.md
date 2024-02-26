@@ -82,6 +82,34 @@ They have no inherent meaning and are styled or scripted as needed.
 
 WEEK2
 UNIT8: HTML INTERGRATION
+Involves using HTML code in different context to create content,structure and functionality.
+An HTML page is structured using various HTML tags, each serving a specific purpose. A typical HTML document has a basic structure that includes:
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: The root element of an HTML page.
+<head>: Contains meta-information about the document, like its title and links to scripts and stylesheets.
+<body>: Contains the content of the document, such as text, images, links, and other media.
+The head of an HTML document (<head> tag) includes elements that are not directly visible to users but are crucial for the document's metadata, linking resources, and other configurations:
+<title>: Specifies the title of the document, which appears in the browser's title bar or tab.
+<meta>: Provides metadata about the HTML document, such as character set, author, and viewport settings.
+<link>: Used to link external resources like CSS files to style the HTML document.
+<script>: Used to include JavaScript files or code which can manipulate the HTML document's content or behavior.
+<style>: Contains internal CSS styles for the document.
+Content structuring involves organizing elements within a webpage to create a logical hierarchy and layout.It includes using semantic elements like:
+Main:The main element is used once per webpage and tells the browser where the main content is located.
+Header: Head is where the file's metadata lives and is not displayed to users. Header is used for site headers, article headers, and headers within the content. A header is usually found at the top of most web pages and may include a logo, site name, and navigation.
+Footer:The footer signifies that there are extra things to convey, regardless of its position on the page.
+Article:Some articles begin with metadata like hashtags or share buttons, which are suitable for a footer element. The article element wraps around any type of content unit, whether it is a long written article, a short snippet, a teaser card, a tweet, or even an app element. It represents a standalone unit of content.
+Section:The section element is used to mark sections of content. For example, in a long essay with subheadings, each segment can be wrapped in a section element. It is also useful for dividing different topic zones on a website. Each section typically starts with its own headline.
+Aside:the aside element is for content that is off to the side, like sidebar information or additional details that accompany an article but are not part of its main flow. Advertisements can also be marked as an aside. Although the position on the page does not matter, the semantic meaning of these elements is crucial. The visual layout often conveys meaning, and these HTML elements help transfer that meaning from the design to the content.
+
+WEEK3
+UNIT9:WORKING WITH FORMS AND INTERACTIVE ELEMENTS
+
+
+
+  
+
+
 
 
 
