@@ -11,6 +11,7 @@ WEEK1
 UNIT2: TEXT FORMATTING
 HTML SYNTAX
 
+
 HTML is a language used to structure web pages,it uses tags which are closing tagc(<p>) and opening tags(</p>).
 HTML have four elements used for making up headlines, which are h1,h2,h3,h4,h5 and h6.
 There are four HTML elements,two for bold and two for italic
@@ -82,6 +83,7 @@ They have no inherent meaning and are styled or scripted as needed.
 
 WEEK2
 UNIT8: HTML INTERGRATION
+
 Involves using HTML code in different context to create content,structure and functionality.
 An HTML page is structured using various HTML tags, each serving a specific purpose. A typical HTML document has a basic structure that includes:
 <!DOCTYPE html>: Declares the document type and version of HTML.
@@ -104,6 +106,42 @@ Aside:the aside element is for content that is off to the side, like sidebar inf
 
 WEEK3
 UNIT9:WORKING WITH FORMS AND INTERACTIVE ELEMENTS
+
+HTML Form Tag: Use the <form> tag to define a form on your webpage.
+Form Controls: These are elements used within a form to collect user input.
+Text input: <input type="text">
+Password input: <input type="password">
+Checkbox: <input type="checkbox">
+Radio buttons: <input type="radio">
+Select dropdown: <select><option>...</option></select>
+Textarea: <textarea></textarea>
+Form Submission:Specify the action attribute of the form tag to determine where the form is sent.
+Form Submssion Handling:Use JavaScript to handle form submission asynchronously (preventDefault() method),Validate form data before submission and display error messages if validation fails.
+AJAX Form Submission:Submit forms asynchronously using AJAX and Update parts of the page dynamically without reloading the entire page.
+Form Reset:Allow users to reset form fields to their default values and Use the <input type="reset"> button or JavaScript to reset form fields.
+Autofill and Autofocus:Use the autofocus attribute to automatically focus on a form element when the page loads and Use the autocomplete attribute to control autofill behavior.
+File Upload:Allow users to upload files using the <input type="file"> element and Handle file uploads on the server-side.
+Hidden Fields:Use <input type="hidden"> to store data in the form that is not visible to the user and Useful for passing additional data along with form submissions.
+Date and Time Picker:Use HTML5 date and time input types (<input type="date">, <input type="time">, <input type="datetime-local">) or JavaScript libraries for date and time selection.
+Form Accessibility:Ensure forms are accessible to users with disabilities by providing proper labels, ARIA attributes, and keyboard navigation.
+
+WEEK3
+UNIT10: ORGANIZING TABULAR INFORMATION IN HTML
+
+Organizing tabular information in HTML involves using the <table>, <tr>, <th>, and <td> tags.
+table>: Defines the table.
+<tr>: Defines a row within the table.
+<th>: Defines a header cell (typically bold and centered).
+<td>: Defines a data cell.
+Define Headers:Use <th> within <tr> to define column headers.
+Add Data:Use <td> within <tr> to add data cells.
+Multiple Rows:Add more <tr> for additional rows.
+Styling:Apply CSS to style the table, rows, headers, and cells as needed.
+
+
+
+
+
 
 
 
