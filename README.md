@@ -138,6 +138,23 @@ Add Data:Use <td> within <tr> to add data cells.
 Multiple Rows:Add more <tr> for additional rows.
 Styling:Apply CSS to style the table, rows, headers, and cells as needed.
 
+WEEK3
+UNIT1: INTRODUCTION TO CSS
+
+CSS(Cascading Style Sheet) is a stylesheet language used to describe the presentation of a document in HTML.
+CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+CSS has two parts:
+1.The selector:Indicates the HTML element you want to style.
+2.The declaration block:Contains one or more declarations separated by semicolons. 
+In CSS, each style declaration consists of two parts:
+1.A property: The aspect of the element you want to change (e.g., color, width, height).
+2.A value: Assigned to properties to specify how to style the elements.
+Comments are used in CSS to explain your code and can help you and others understand the intention behind your CSS rules.
+Element selectors allow you to apply styles to HTML elements directly. When you use an element selector, all elements of that type in the document will be styled according to the CSS rule defined.
+Class selectors target HTML elements that have a specific class attribute followed by the class name.They are defined using a period ('.') followed by the class name.
+When multiple selectors share the same style declarations, they can be grouped together to reduce code redundancy. To group selectors, separate each selector with a comma.
+Descendent selectors target elements that are nested within other elements, allowing you to style specific elements within a particular context.
+
 
 
 
