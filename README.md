@@ -155,7 +155,7 @@ Class selectors target HTML elements that have a specific class attribute follow
 When multiple selectors share the same style declarations, they can be grouped together to reduce code redundancy. To group selectors, separate each selector with a comma.
 Descendent selectors target elements that are nested within other elements, allowing you to style specific elements within a particular context.
 
-WEEK
+WEEK4
 UNIT3: CSS IMAGES AND COLORS
 
 When it comes to images and colors, CSS provides a variety of properties and techniques to manipulate them, enhancing the visual appeal of a website,The goal is to choose a color scheme or specific colors for your website
@@ -173,7 +173,7 @@ Background images repeat in both the x (horizontal) and y (vertical) directions.
 Property is used to specify the position of the background image.
 You can specify the size of the background image using the background-size property. This can be set to cover, contain, or specific dimensions.
 
-WEEK
+WEEK4
 UNIT4: CSS BOXES,TYPES AND SIZES
 
 In CSS elements are represented as boxes:
@@ -199,6 +199,11 @@ Margin: Space outside the border.
 Border: Use border property to set border style, width, and color.
 Padding: Use padding property to create space between content and border.
 Margin: Use margin property to create space outside the border, affecting layout and spacing between elements.
+
+WEEK4
+UNIT5: ADVANCED CSS PROPERTIES AND CONCEPTS
+
+
 
 
 
