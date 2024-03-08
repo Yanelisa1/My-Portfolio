@@ -139,7 +139,7 @@ Multiple Rows:Add more <tr> for additional rows.
 Styling:Apply CSS to style the table, rows, headers, and cells as needed.
 
 WEEK3
-UNIT1: INTRODUCTION TO CSS
+UNIT1&2: INTRODUCTION TO CSS AND ADDING CSS SELECTORS
 
 CSS(Cascading Style Sheet) is a stylesheet language used to describe the presentation of a document in HTML.
 CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
@@ -154,6 +154,61 @@ Element selectors allow you to apply styles to HTML elements directly. When you 
 Class selectors target HTML elements that have a specific class attribute followed by the class name.They are defined using a period ('.') followed by the class name.
 When multiple selectors share the same style declarations, they can be grouped together to reduce code redundancy. To group selectors, separate each selector with a comma.
 Descendent selectors target elements that are nested within other elements, allowing you to style specific elements within a particular context.
+
+WEEK
+UNIT3: CSS IMAGES AND COLORS
+
+When it comes to images and colors, CSS provides a variety of properties and techniques to manipulate them, enhancing the visual appeal of a website,The goal is to choose a color scheme or specific colors for your website
+CSS allows you to specify colors in various ways, including using names, hexadecimal codes, RGB(A), and HSL(A) values.
+RGB stands for Red, Green, and Blue. RGBA includes an alpha channel for opacity.
+HSL stands for Hue, Saturation, and Lightness. HSLA includes an alpha channel for opacity.
+We can change the background color for elements by using the "background-color" property and specifying a hex color, color the background behind specific elements.
+Instead of using a text color, set it up as a background color. Choose the beige color from Canva and apply it as the background color for the unordered list(ul).
+Images are frequently found on webpages.The web has supported three types of image formats:
+GIF:  Had limited colors but could include transparency and animation. 
+PNG:  Had more colors and transparency but no animation. GIF and PNG were suitable for illustrations such as logos or cartoons. 
+JPEG:  Stands for Joint Photographic Experts Group, was optimized for photographs and supported millions of colors but lacked transparency and animation. 
+You can set an image as the background of an element using the background-image property.
+Background images repeat in both the x (horizontal) and y (vertical) directions. You can control this behavior using the background-repeat property.
+Property is used to specify the position of the background image.
+You can specify the size of the background image using the background-size property. This can be set to cover, contain, or specific dimensions.
+
+WEEK
+UNIT4: CSS BOXES,TYPES AND SIZES
+
+In CSS elements are represented as boxes:
+Block-level Boxes: These elements occupy the full width available, and each one appears on a new line in the document flow. Examples include <div>, <p>, <h1>-<h6>.
+Inline Boxes: These elements only take up as much width as necessary and do not force new lines. Examples include <span>, <a>, <strong>.
+Inline-Block Boxes: These elements are similar to inline elements but can have set dimensions and padding. They don't force new lines.
+Sizes of Boxes: Box size can be defined using width and height properties.
+We have two common font types:
+1.Serif-Serif fonts have small lines at the ends of the letters called serifs. In the past, serif fonts were used for printed materials with long text blocks.
+2.Sans serif- sans serif fonts do not have serifs and have a more modern appearance.
+CSS provides properties to control typography.
+font-family: Specifies the font family.
+font-size: Sets the size of the font.
+font-weight: Sets the boldness of the font.
+font-style: Sets the style of the font (italic, oblique).
+We use width and height properties to set the dimensions of a box and sizes can be specified in various units like pixels (px), percentages (%), or relative units (em, rem).
+In web design, there are two types of sizing: absolute and relative. 
+Box Model: Every element in CSS is considered a box, consisting of content, padding, border, and margin.
+Content Box: Actual content of the element.
+Padding: Space between the content and the border.
+Border: Border around the padding.
+Margin: Space outside the border.
+Border: Use border property to set border style, width, and color.
+Padding: Use padding property to create space between content and border.
+Margin: Use margin property to create space outside the border, affecting layout and spacing between elements.
+
+
+
+
+
+
+
+
+
+
 
 
 
