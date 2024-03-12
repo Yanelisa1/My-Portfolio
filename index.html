@@ -1,50 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="hero">
-     <nav> 
-        <a href="#YANELISA VUZA">YANELISA VUZA</a>
-        <ul> 
-            <li><a href="#home">Home</a></li> 
-            <li><a href="about">About</a></li> 
-            <li><a href="#project">Project</a></li> 
-            <li><a href="#contact">Contact</a></li>              
-         </ul> 
-         </nav>
-         <div class="detel">
-         <h1>Hi, I'm Yanelisa</h1>
-         <h2>Web Developer | Tech Enthusiast</h2>
-         </div>
-         <div class="images">
-            <img src="images/picture.jpeg" class="picture">
-         </div>
-         
-         <div id="socials-container">
-            <img src="images/linkedin.png" alt="LinkedIn Icon"
-            class="icon" onClick="location.href='https://www.linkedin.com/in/yanelisa-vuza-4433302b0//'"/>
-            <img src="images/git.png" alt="Github Profile"
-            class="icon" onClick="location.href='https://github.com/Yanelisa1/'"/>
-        </div>
-         <div class="about">
-        <h2>About me</h2>
-        <p>Welcome to My Portfolio! I'm a Web developer from We </p>
-        <p>for creating responsive user-friendly websites</p>
-         </section>
-         <div class="Education">
-         <h2>Education</h2>
-         <p></p>
 
-         </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Y</span>anelisa <span>V</span>uza</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#About" data-after="About">About</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hi, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Yanelisa Vuza <span></span></h1>
+        <h1>Software Developer</h1>
+        <a href="#projects" type="button" class="cta">Projects</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="images/picture.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <p>My name is Yanelisa Vuza and I have recently completed a Diploma in IT majoring in Software Development at Walter Sisulu University.
+         I'm passionate about building user-friendly websites,I'm Tech enthusiastic,I'm pursuing new expressions through experiments and thoughts,
+         I love structure and order and I also stand for quality,Also I like working in a team you learn faster and much more. As the saying
+         goes:'two heads are better than one'.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <li><span>HTML&CSS</span></li>
+            <li><span>Software Developer</span></li>
+            <li><span>Java script</span></li>
+          </div>
+          <div class="tab-contents" id="experience">
+            <li><span>2024-current </span> Internship in Automation Testing </li>
+          </div>
+          <div class="tab-contents" id="education">
+            <li><span>2018-Matric</span></li>
+            <li><span>2019-2022 </span> Diploma in Software Development</li>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+   <!-- Projects Section -->
+   <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>yanelisa.vuza@capaciti.org.za</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="images/linkedin.png"
+          <div class="contact-info">
+            <h1>linkedin</h1>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="images/git.png" /></div>
+          <div class="contact-info">
+            <h1>Github</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+  <script>
+    var tablinks = document.getElementsByClassName("ta-links");
+    var tabcontents = document.getElementsByClassName("ta-contents");
+    function opentab(tabname){
+
+
+    }
+
+
+
+  </script>
+</body>
+</html>
         
          
 
          
-
-</body>
-</html>
