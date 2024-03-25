@@ -149,11 +149,89 @@ CSS has two parts:
 In CSS, each style declaration consists of two parts:
 1.A property: The aspect of the element you want to change (e.g., color, width, height).
 2.A value: Assigned to properties to specify how to style the elements.
+
+UNIT2: ADDING CSS SELECTORS
+
 Comments are used in CSS to explain your code and can help you and others understand the intention behind your CSS rules.
 Element selectors allow you to apply styles to HTML elements directly. When you use an element selector, all elements of that type in the document will be styled according to the CSS rule defined.
 Class selectors target HTML elements that have a specific class attribute followed by the class name.They are defined using a period ('.') followed by the class name.
 When multiple selectors share the same style declarations, they can be grouped together to reduce code redundancy. To group selectors, separate each selector with a comma.
 Descendent selectors target elements that are nested within other elements, allowing you to style specific elements within a particular context.
+
+UNIT3: CSS IMAGES AND COLORS
+
+Identify a Color Scheme
+A color scheme is a selection of colors used in design for a range of media. For web design, it's essential to choose colors that complement each other and align with the message and emotion the website intends to convey.Users can also explore other combinations like monochromatic (where two similar colors are chosen) and analogous (involves various shades of greens and blues, or triadic, which creates a pattern on the color wheel using an equilateral triangle). There is also the option of tetradic, which generates a square's worth of colors. 
+Formatting Color in CSS
+In CSS, colors can be specified in various ways:
+Keyword: like red, blue, etc.
+HEX code: a # followed by a 6-digit hexadecimal code, e.g., #FF5733.
+RGB: an rgb function with three values for red, green, and blue, e.g., rgb(255, 87, 51).
+RGBA: similar to RGB but with an alpha (transparency) value, e.g., rgba(255, 87, 51, 0.5).
+HSL: a hsl function with values for hue, saturation, and lightness, e.g., hsl(11, 100%, 60%).
+HSLA: similar to HSL but with an alpha value for transparency, e.g., hsla(11, 100%, 60%, 0.5).
+Background and Text Color in CSS
+To set the background color of an element, you can use the background-color property. To set the text color, use the color property. 
+Understanding Images in CSS
+In CSS, images can be used as backgrounds or directly inserted via the HTML <img> tag. CSS provides a wide range of properties to control how these images are displayed and interact with other elements, such as background-image, background-size, background-repeat, and object-fit.
+Working with Background Images in CSS
+To set a background image for an element, you use the background-image property. You can control the size of the image with background-size and whether the image repeats with background-repeat.
+
+UNIT4: CSS BOXES
+
+In general, people who are not designers usually categorize fonts into two types: 
+Serif and Sans serif.
+Serif fonts have small lines at the ends of the letters called serifs. In the past, serif fonts were used for printed materials with long text blocks. When letters were manually set on a printing press, they were never perfectly aligned. The serifs helped connect the letters, making the text easier to read. 
+Sans serif fonts do not have serifs and have a more modern appearance. With computer typesetting, sans serif fonts are mainly used on the web for extended text because they look clean and are easy to read.]
+Applying Type Formatting with CSS- This CSS rule will apply to all <p> (paragraph) elements in your HTML, setting the text to a bold, italic Arial font, size 16 pixels, and center-aligned.
+Understanding and Applying Size in CSS
+Size in CSS can refer to dimensions of elements (width and height), text size (font-size), or the size of other properties like border thickness. CSS allows sizes to be specified in various units, including pixels (px), ems (em), rems (rem), percentages (%), and viewport units (vw/vh).
+For text, em is relative to the font size of the element, rem is relative to the font size of the root element (<html>), and pixels are a fixed size. Viewport units are based on the size of the browser window, where vw is a percentage of the viewport’s width, and vh is a percentage of the viewport’s height.
+Understanding the Box Model in CSS 
+The CSS box model is a fundamental concept that describes the layout of HTML elements. Each element is represented as a rectangular box, consisting of:
+Content: The actual content of the box, where text and images appear.
+Padding: The space between the content and the border.
+Border: Surrounds the padding (if any) and content.
+Margin: The outermost layer, representing the space between the element's border and its surrounding elements.
+Working with Border, Padding, and Margin in CSS
+To manipulate the appearance of the box model components, you use the border, padding, and margin properties. Each of these properties can target specific sides of an element (top, right, bottom, left) or all sides at once.This  CSS rule defines a class named .box that will apply a 200 pixels width, 20 pixels padding on all sides, a 10 pixels margin on all sides, and a 5 pixels solid black border around an HTML element.
+
+UNIT5: ADVANCED CSS PROPERTIES AND CONCEPTS
+
+Styling Links with CSS
+Links in HTML are defined with the <a> tag and can be styled with CSS to improve their appearance and make them more engaging for users. There are four pseudo-classes that are commonly used to style links:
+Link - applies styles to links that have not yet been visited.
+Visited - applies styles to links that the user has visited.
+Hover - applies styles when the mouse hovers over the link.
+Active - applies styles at the moment the link is clicked.
+Inheritance in CSS is a mechanism where some CSS properties, like font-size and color, are passed from parent elements to their children. This means that if you set a property on a parent element, the child elements will inherit that property unless they have the same property set to a different value.Not all CSS properties are inherited by default, but you can force inheritance using the inherit value.
+Debugging CSS with Borders and Background Colors
+A common technique for debugging layout issues in CSS is to use border and background color styles to make the dimensions and positioning of elements visible. By applying a high-contrast border or background color, you can visually identify where elements are located on the page, how much space they occupy, and how they interact with each other.
+
+WEEK
+MODULE1: INTRODUCTION TO SQL
+
+SQL which stands for Structured Query Language, is a standard programming language specifically designed for managing and manipulating relational databases. 
+Requesting Data from a Database
+SELECT Statement is used to retrieve data from a database. It allows you to specify which columns you want to retrieve data from. For example SELECT First_Name,Last_Name FROM Employees.
+WHERE Statement is used  to filter records based on specified conditions. It allows you to retrieve only the rows that meet specific criteria. For Example SELECT * FROM customers WHERE city = 'New York'.
+Statement Criteria uses the AND logical operator For Example "SELECT first_name, last_name FROM people WHERE state_code=CA AND shirt_or_hat=shirt." You can string multiple conditions with AND or even use OR to get results that meet one of two conditions. Just remember those parentheses they are your guiding light in complex queries.
+Statement Responses Use the LIKE operator which allows us to look for values that match part of a field,Instead of a long OR statement, try 'state_code LIKE 'C%'.You can fine-tune your search with percent signs at different ends.If you want a specific number of results, throw in LIMIT. It helps when dealing with large databases.
+The ORDER BY clause is used to sort the result set returned by a SELECT statement. It allows you to specify one or more columns by which to sort the rows, as well as the direction (ascending or descending) of the sorting.For Example SELECT * FROM products ORDER BY price DESC.
+Finding More Data It is not just about matching records.Functions like LENGTH give us insights into field sizes. DISTINCT helps find unique values, and COUNT tallies records matching specific criteria.
+
+MODULE1: Data Types And Arithmetic Operators
+
+
+
+
+
+
+
+
+
+
+
 
 
 
