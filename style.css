@@ -7,9 +7,21 @@ html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+	html {
+		font-size: 1em;
+	  }
+	  
+	  h1 {
+		font-size: 2rem;
+	  }
 }
 a {
 	text-decoration: none;
+}
+.container {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 50px 50px;  
 }
 .container {
 	min-height: 100vh;
@@ -22,6 +34,7 @@ img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	max-width: 100%;
 }
 p {
 	color: black;
@@ -141,6 +154,7 @@ p {
 #header .nav-list ul li:hover a {
 	color: crimson;
 }
+
 #header .hamburger {
 	height: 60px;
 	width: 60px;
@@ -198,6 +212,14 @@ p {
 /* End Header section */
 
 /* Hero Section */
+.home-section.active,
+.Education-section.active,
+.about-section.active,
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
 #hero {
 	background-image: url(images/html\ picture.jpeg);
 	background-size: cover;
@@ -252,8 +274,8 @@ p {
 	animation-delay: 0.5s;
 }
 #hero img{
-	width: 80px;
-	height: 50%;
+	width: 40px;
+	height: 30%;
 }
 #hero h1:nth-child(1) span {
 	animation-delay: 0.5s;
@@ -266,9 +288,10 @@ p {
 }
 
 /* End Hero Section */
+
 /* About Section */
 #about .about {
-	flex-direction: row;
+	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -282,7 +305,7 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: larger;
+	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
@@ -313,56 +336,142 @@ p {
 	z-index: -1;
 }
 /* End About Section */
+
+/* Education and Experience Section */
+.timeline{
+    display: block;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.timeline .heading{
+    margin-bottom: 150px;
+}
+
+.card{
+    width: 45%;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin: -80px 0;
+    position: relative;
+    background: #f00;
+}
+
+.card:nth-child(even){
+    margin-left: auto;
+}
+
+.card:nth-child(even):before{
+    content: '';
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+}
+
+.card:nth-child(even):after{
+    content: '';
+    position: absolute;
+    left: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.card:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    right: -13%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #a72929;
+    border-radius: 50%;
+}
+
+.card:nth-child(odd):after{
+    content: '';
+    position: absolute;
+    right: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.card:nth-child(2), .card:nth-child(2):before{
+    background: #ff4f4f;
+}
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #ffb84f;
+}
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #3dca5c;
+}
+.card:nth-child(5), .card:nth-child(5):before{
+    background: #565252;
+}
+.card:nth-child(6), .card:nth-child(6):before{
+    background: #4fa0ff;
+}
+
+.card:nth-child(even) .card-body:before{
+    content: '';
+    position: absolute;
+    left: -12%;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    border: 1px dashed #fff;
+    z-index: -1;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+/* End Education and Experince Section */
 /* Skills Section */
-* {box-sizing: border-box}
-.container {
-  width: 90%;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the space between skill items */
 }
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #ddd;
+
+.skill {
+    flex-basis: calc(50% - 20px); /* Adjusts the width of each skill item, accounting for the gap */
+    display: flex;
+    flex-direction: column;
 }
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
+
+.skill label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds space between the label and the percentage bar */
+}
+
+.skill-level {
+    background-color: #ffb84f; /* Green background for the percentage bar */
+    color: white;
+    text-align: right;
+    padding-right: 5px; /* Ensures text is not flush against the right edge */
+    border-radius: 5px; /* Rounds the corners of the percentage bar */
+    height: 20px; /* Sets a fixed height for the percentage bar */
+}
+
 /* End Skills Section */
-
-/* Education  section */
-* {
-	box-sizing: border-box;
-  }
-  body {
-	background-color: #474e5d;
-	font-family: Helvetica, sans-serif;
-  }
-  .Education{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: auto;
-	padding-bottom: 5rem;
-  }		
-  .education .education-row{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 5rem;
-  }
-  .education-row .education-column{
-	flex: 1 1 40rem;
-  }
-  .education-column .title{
-	font-size: 2.5rem;
-	margin: 0 0 1.5rem 2rem;
-  }
-  .education-column .education-box{
-
-
-  }
-
-/* End Education section */
 
 /* contact Section */
 * {box-sizing: border-box;}
@@ -396,8 +505,8 @@ input[type=submit]:hover {
   padding: 20px;
 }
 .iframe{
-	margin: 100px;
-	padding-right: 70%;
+	margin: 50%;
+	padding-right: 30%;
 }
 /*End contact Section */
 
@@ -406,7 +515,7 @@ input[type=submit]:hover {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer {
-	min-height: 200px;
+	min-height: 100px;
 	flex-direction: column;
 	padding-top: 50px;
 	padding-bottom: 10px;
@@ -532,3 +641,23 @@ input[type=submit]:hover {
     }
 }
 /* End  Media Query For Desktop */
+ /**
+	 * RESUME
+	 */
+
+	 .timeline-text { max-width: 700px; }
+
+	}
+	/**
+   * #RESUME
+   */
+
+   .timeline-list { margin-left: 65px; }
+
+   .timeline-item:not(:last-child)::before { left: -40px; }
+ 
+   .timeline-item::after {
+	 height: 8px;
+	 width: 8px;
+	 left: -43px;
+   }
