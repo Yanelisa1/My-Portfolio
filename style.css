@@ -338,137 +338,130 @@ p {
 /* End About Section */
 
 /* Education and Experience Section */
-.timeline{
-    display: block;
-    width: 80%;
-    margin: 150px auto;
-}
-
-.timeline .heading{
-    margin-bottom: 150px;
-}
-
-.card{
-    width: 45%;
-    padding: 30px;
+body {
+    background: #ffffff;
+    }
+    .timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #777777;
+    }
+    .timeline__component {
+    margin: 0 20px 20px 20px;
+    }
+    .timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 3px #106fb4;
     border-radius: 10px;
-    color: #fff;
-    display: block;
-    margin: -80px 0;
+    } /* LEAVE TILL LAST */
+    .timeline__component--bottom {
+    margin-bottom: 0;
+    }
+    .timeline__middle {
     position: relative;
-    background: #f00;
-}
-
-.card:nth-child(even){
-    margin-left: auto;
-}
-
-.card:nth-child(even):before{
-    content: '';
+    background: #d6d6d6;
+    }
+    .timeline__point {
     position: absolute;
-    left: -15%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #191919;
-    border-radius: 50%;
-}
-
-.card:nth-child(even):after{
-    content: '';
-    position: absolute;
-    left: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(odd):before{
-    content: '';
-    position: absolute;
-    right: -13%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #a72929;
-    border-radius: 50%;
-}
-
-.card:nth-child(odd):after{
-    content: '';
-    position: absolute;
-    right: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(2), .card:nth-child(2):before{
-    background: #ff4f4f;
-}
-.card:nth-child(3), .card:nth-child(3):before{
-    background: #ffb84f;
-}
-.card:nth-child(4), .card:nth-child(4):before{
-    background: #3dca5c;
-}
-.card:nth-child(5), .card:nth-child(5):before{
-    background: #565252;
-}
-.card:nth-child(6), .card:nth-child(6):before{
-    background: #4fa0ff;
-}
-
-.card:nth-child(even) .card-body:before{
-    content: '';
-    position: absolute;
-    left: -12%;
     top: 0;
-    width: 0px;
-    height: 100%;
-    border: 1px dashed #fff;
-    z-index: -1;
-}
-
-.card-title{
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #3F8BC3;
+    border-radius: 50%;
+    } /* LEAVE TILL LAST */
+    .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+    }
+    .timeline__date--right {
+    text-align: right;
+    color: #106fb4;
+    }
+    .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #391472;
+    }
+    .timeline__paragraph {
+    line-height: 1.5;
+    }
+    .timeline__date {
+    color: #106fb4;
+    }
+    .titol {
+    font-style: italic;
+    }
+has context menu
 /* End Education and Experince Section */
 /* Skills Section */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjusts the space between skill items */
+    width: 95%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 100px;
+	color: #191919;
 }
-
-.skill {
-    flex-basis: calc(50% - 20px); /* Adjusts the width of each skill item, accounting for the gap */
-    display: flex;
-    flex-direction: column;
+.skill-card{
+ position: relative;
 }
-
-.skill label {
-    font-weight: bold;
-    margin-bottom: 5px; /* Adds space between the label and the percentage bar */
+.skill-img{
+display: block;
+margin: auto;
+height: 100px;
 }
-
-.skill-level {
-    background-color: #ffb84f; /* Green background for the percentage bar */
-    color: white;
-    text-align: right;
-    padding-right: 5px; /* Ensures text is not flush against the right edge */
-    border-radius: 5px; /* Rounds the corners of the percentage bar */
-    height: 20px; /* Sets a fixed height for the percentage bar */
+.skill-name{
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: capitalize;
+	margin: 30px 0 20px;
+}
+.skill-level{
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	border-radius: 50%;
+	border: 10px solid;
+}
+.skill-card:nth-child(1) .skill-level{
+	background: #ff4f4f28;
+	border-color: #ff4f4f;
+	color: #ff4f4f;
+}
+.skill-card:nth-child(2) .skill-level{
+	background: #4fa0ff28;
+	border-color: #4fa0ff;
+	color: #4fa0ff;
+}
+.skill-card:nth-child(3) .skill-level{
+	background: #ffed4f28;
+	border-color: #ffed4f;
+	color: #ffed4f;
+}
+.skill-card:nth-child(4) .skill-level{
+	background: #52ff4f28;
+	border-color: #52ff4f;
+	color: #52ff4f;
+}
+.skill-card:nth-child(5) .skill-level{
+	background: #4fdfff28;
+	border-color: #4fdfff;
+	color: #4fdfff;
 }
 
 /* End Skills Section */
@@ -582,7 +575,7 @@ input[type=submit]:hover {
 
 	/* Skills Section */
 	#services .service-bottom .service-item {
-		flex-basis: 45%;
+		flex-basis: 70%;
 		margin: 2.5%;
 	}
 	/* End Skills Section */
@@ -641,23 +634,3 @@ input[type=submit]:hover {
     }
 }
 /* End  Media Query For Desktop */
- /**
-	 * RESUME
-	 */
-
-	 .timeline-text { max-width: 700px; }
-
-	}
-	/**
-   * #RESUME
-   */
-
-   .timeline-list { margin-left: 65px; }
-
-   .timeline-item:not(:last-child)::before { left: -40px; }
- 
-   .timeline-item::after {
-	 height: 8px;
-	 width: 8px;
-	 left: -43px;
-   }
